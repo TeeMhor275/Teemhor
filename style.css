@@ -1,38 +1,88 @@
-/* CSS Animations and Transitions */
-.nav {
-  height: 50px;
-  width: 100%;
-  background-color: #8f5bf0;
-  position: relative;
-}
-.nav > .nav-header {
-  display: inline;
-}
-.animated-button {
-  background-color: #0d6efd;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  transition: all 0.5s ease;
-  border-radius: 5px;
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.animated-button:hover {
-  background-color: #0a58ca;
-  transform: scale(1.1);
+/* Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f6fa;
+    color: #142aa5;
 }
 
-.fade-in-text {
-  animation: fadeInLeft 2s ease-out;
+/* Navbar */
+.navbar {
+    background-color: #142aa5;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
 }
 
-@keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Content */
+.content {
+    text-align: center;
+    margin: 100px auto;
+    padding: 0 20px;
+}
+
+.content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.content h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: 1.2em;
+}
+
+/* Footer */
+.footer {
+    background-color: #142aa5;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 100px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
