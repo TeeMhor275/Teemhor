@@ -1,0 +1,38 @@
+/* CSS Animations and Transitions */
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #8f5bf0;
+  position: relative;
+}
+.nav > .nav-header {
+  display: inline;
+}
+.animated-button {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  transition: all 0.5s ease;
+  border-radius: 5px;
+}
+
+.animated-button:hover {
+  background-color: #0a58ca;
+  transform: scale(1.1);
+}
+
+.fade-in-text {
+  animation: fadeInLeft 2s ease-out;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
